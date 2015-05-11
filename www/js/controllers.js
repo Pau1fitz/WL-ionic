@@ -5,12 +5,13 @@ angular.module('starter.controllers', [])
   $scope.user = Photos;
 
 	$scope.addPostToPosts = function(post) {
-		Photos.addPostToPosts(post);
+		Photos.addPostToPosts(post)
 	};
 
 	$scope.changeName = function() {
 		Photos.changeName();
 	};
+
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {
@@ -26,14 +27,18 @@ angular.module('starter.controllers', [])
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
-    enableFriends: true;
+    enableFriends: true
   };
 })
 
-.controller('PlacesVistedCtrl', function($scope) {
+.controller('PlacesVistedCtrl', function($scope){
+
+
 
 })
 
-.controller('CameraCtrl', function($scope) {
+.controller('CameraCtrl', function($scope){
+
+
 
 })

@@ -49,7 +49,7 @@ angular.module('starter.services', [])
   };
 })
 
-.factory('Photos', function() {
+.factory('Photos', function(){
   
   var o = {
     posts: [],
@@ -65,7 +65,7 @@ angular.module('starter.services', [])
     o.posts.unshift(post);
   };
 
-  o.changeName = function() {
+  o.changeName = function(){
     console.log('hi')
     o.name = 'Jim'
   };
