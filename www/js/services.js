@@ -53,7 +53,8 @@ angular.module('starter.services', [])
   var o = {
     posts: []
   }
-   o.addSongToFavorites = function(post) {
+   o.addPostToPosts = function(post) {
+    if (!post) return false;
     console.log('hi')
     o.posts.unshift(post);
   }

@@ -1,14 +1,11 @@
 <ion-view view-title="Camera">
   <ion-content class="padding"> 
 
-  <span class="item item-input">
+  <div class="item item-input" ng-click="addPostToPosts(photo)">
     <span class="input-label">Photo</span>
     <input type="text" ng-model="photo">
-    <button class="button button-dark" type="button" ng-click="addSongToFavorites(photo)">Add</button>
-  </span>
-
-
-
-
+    <button class="button button-dark" type="button" >Add</button>
+  </div>
+  
   </ion-content>
 </ion-view>

@@ -8,8 +8,10 @@ angular.module('starter.controllers', [])
 		"location": "London",
 		"posts": Photos.posts
 	}
-	
-	$scope.addSongToFavorites = Photos.addSongToFavorites;
+
+	$scope.addPostToPosts = function(post) {
+		Photos.addPostToPosts(post)
+	};
 
 })
 
