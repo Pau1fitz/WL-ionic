@@ -61,12 +61,11 @@ angular.module('starter.services', [])
 
    o.addPostToPosts = function(post) {
     if (!post) return false;
-    console.log('hi')
     o.posts.unshift(post);
   };
 
-  o.changeName = function(){
-    o.name = 'Jim'
+  o.changeName = function(name){
+    o.name = name;
   };
 
   return o;

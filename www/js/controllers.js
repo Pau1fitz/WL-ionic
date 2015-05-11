@@ -8,8 +8,8 @@ angular.module('starter.controllers', [])
 		Photos.addPostToPosts(post)
 	};
 
-	$scope.changeName = function() {
-		Photos.changeName();
+	$scope.changeName = function(name) {
+		Photos.changeName(name);
 		console.log(Photos.name)
 	};
 
