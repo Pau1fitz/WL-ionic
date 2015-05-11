@@ -10,7 +10,6 @@ angular.module('starter.controllers', [])
 
 	$scope.changePhoto = function(name) {
 		Photos.changePhoto(name);
-		console.log(Photos.name)
 	};
 
 })
