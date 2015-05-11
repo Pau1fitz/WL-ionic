@@ -9,8 +9,6 @@
 
 }
 
-.bar.bar-stable .title{
-	background-color: black;
-	color: white;
-	margin: auto;
+.post-photos img{
+	max-width: 350px;
 }

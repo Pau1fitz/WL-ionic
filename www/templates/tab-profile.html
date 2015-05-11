@@ -1,14 +1,14 @@
-<ion-view view-title="Profile">
+<ion-view view-title="My Profile">
   <ion-content class="padding"> 
-  
+
      <div class="item item-body">
 
       <img class="full-image" src="http://ilarge.lisimg.com/image/6708503/968full-paul-fitzgerald.jpg" style="max-width:350px;">
      <p class="profile-details">
         {{user.name}} | {{user.age}} | {{user.location}}
       </p>
-      <div ng-repeat="post in user.posts">
-        <img ng-src="{{post}}" style="max-width:350px;"> 
+      <div class="post-photos" ng-repeat="post in user.posts">
+        <img ng-src="{{post}}"> 
       </div>
   </div>
   </ion-content>
