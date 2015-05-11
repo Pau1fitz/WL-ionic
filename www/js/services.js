@@ -64,8 +64,8 @@ angular.module('starter.services', [])
     o.posts.unshift(post);
   };
 
-  o.changeName = function(name){
-    o.name = name;
+  o.changePhoto = function(name){
+    o.profilePhoto = name;
   };
 
   return o;
