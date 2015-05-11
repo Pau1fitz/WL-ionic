@@ -1,1 +1,16 @@
 /* Empty. Add your own CSS if you like */
+
+.profile-details{
+	position: relative;
+	bottom: 3em;
+	color: white !important;
+	font-weight: bold;
+	font-size: 1.5em !important;
+
+}
+
+.bar.bar-stable .title{
+	background-color: black;
+	color: white;
+	margin: auto;
+}
