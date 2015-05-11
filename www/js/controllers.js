@@ -3,7 +3,8 @@ angular.module('starter.controllers', [])
 .controller('ProfileCtrl', function($scope, Photos) {
 
 	$scope.user = {
-		"name": "Paul",
+		"name": Photos.name,
+		"profilePhoto": "http://ilarge.lisimg.com/image/6708503/968full-paul-fitzgerald.jpg",
 		"age": 28,
 		"location": "London",
 		"posts": Photos.posts
@@ -11,6 +12,11 @@ angular.module('starter.controllers', [])
 
 	$scope.addPostToPosts = function(post) {
 		Photos.addPostToPosts(post)
+	};
+
+	$scope.changeName = function() {
+		Photos.changeName();
+		console.log(Photos.name)
 	};
 
 })

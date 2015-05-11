@@ -51,12 +51,18 @@ angular.module('starter.services', [])
 
 .factory('Photos', function(){
   var o = {
-    posts: []
+    posts: [],
+    name : 'James'
   }
    o.addPostToPosts = function(post) {
     if (!post) return false;
     console.log('hi')
     o.posts.unshift(post);
+  }
+
+  o.changeName = function(){
+    console.log('hi')
+    o.name = 'Jim'
   }
 
   return o;

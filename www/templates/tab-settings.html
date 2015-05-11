@@ -1,13 +1,18 @@
 <ion-view view-title="Settings">
   <ion-content>
     <ion-list>
-     <label class="item item-input">
+<!--      <div class="item item-input">
     	<i class="icon ion-search placeholder-icon"></i>
     	<input type="text" placeholder="Home Address">
-  	</label>
+  	</div>
     <ion-toggle  ng-model="settings.enableFriends">
         <p>Use Outside Home Country</p>
-    </ion-toggle>
+    </ion-toggle> -->
+
+   <div class="item item-input">
+    <span class="input-label">Change Profile Picture</span>
+    <button class="button button-dark" type="button" ng-click="changeName()">Add</button>
+  </div>
     
     </ion-list>
   </ion-content>

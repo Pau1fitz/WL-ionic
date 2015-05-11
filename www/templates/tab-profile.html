@@ -3,9 +3,9 @@
 
      <div class="item item-body">
 
-      <img class="full-image" src="http://ilarge.lisimg.com/image/6708503/968full-paul-fitzgerald.jpg" style="max-width:350px;">
+      <img class="full-image" ng-src="{{user.profilePhoto}}" style="max-width:350px;">
      <p class="profile-details">
-        {{user.name}} | {{user.age}} | {{user.location}}
+        {{user.name}} | {{user.age}} | {{user.location}} 
       </p>
       <div class="post-photos" ng-repeat="post in user.posts">
         <img ng-src="{{post}}"> 
