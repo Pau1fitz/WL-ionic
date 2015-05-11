@@ -47,4 +47,17 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+
+.factory('Photos', function(){
+  var o = {
+    posts: []
+  }
+   o.addSongToFavorites = function(post) {
+    console.log('hi')
+    o.posts.unshift(post);
+  }
+
+  return o;
+
 });
